@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body onload="">
+	<div style="margin:auto 35%">
+		<img src="success.png" width="400px" height="auto"></img>
+		<h3 id="clock" style="margin-left: 70px"></h3>
+	</div>
+	<script type="text/javascript">        
+		var t = 3;
+		setInterval("refer()", 800);
+		function refer() {  
+			if (t == 0) { 
+				window.location = "index.jsp";
+			} 
+			document.getElementById("clock").innerHTML = "Redirecting to index in " + t + " seconds"; 
+			t--;  
+		} 
+
+	</script> 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+</html>

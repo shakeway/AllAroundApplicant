@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body onload="">
+    <div style="margin:auto 35%">
+        <img src="error.png" width="400px" height="auto"></img>
+        <h3> This is an ERROR PAGE! Contact the akita administrator!</h3>
+        <h3 id="clock" style="margin-left: 70px"></h3>
+    </div>
+    <script type="text/javascript">
+    var t = 3;
+    setInterval("refer()",1000);
+    function refer(){
+        if (t == 0) {
+            location="index.jsp";
+        }
+        document.getElementById("clock").innerHTML="Redirecting to index in " + t + " seconds";
+        t--;
+    }
+
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+</html>
